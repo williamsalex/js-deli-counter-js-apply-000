@@ -1,0 +1,10 @@
+var katzDeliLine = []
+function takeANumber(katzDeliLine, name) {
+  currPos = katzDeliLine.length+1
+  katzDeliLine[currPos] = name
+  return("Welcome, "+name+". You are number "+(currPos+1)+" in line.")
+}
+function nowServing(katzDeliLine) {
+  katzDeliLine=katzDeliLine.slice(1,katzDeliLine.length-1)
+  return 
+}
