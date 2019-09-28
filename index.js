@@ -1,7 +1,7 @@
 var katzDeliLine = []
 function takeANumber(katzDeliLine, name) {
   var currPos
-  currPos = katzDeliLine.length+1
+  currPos = katzDeliLine.length
   katzDeliLine[currPos] = name
   return("Welcome, "+name+". You are number "+(currPos+1)+" in line.")
 }
