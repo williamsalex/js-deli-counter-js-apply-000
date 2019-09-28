@@ -1,10 +1,12 @@
 var katzDeliLine = []
+
 function takeANumber(katzDeliLine, name) {
   var currPos
   currPos = katzDeliLine.length
   katzDeliLine[currPos] = name
   return("Welcome, "+name+". You are number "+(currPos+1)+" in line.")
 }
+
 function nowServing(katzDeliLine) {
   if(katzDeliLine.length === 0) {
     return 'There is nobody waiting to be served!'
@@ -13,4 +15,9 @@ function nowServing(katzDeliLine) {
     katzDeliLine.shift()
     return "Currently serving "+currCustomer+"."
   }
+}
+
+function currentLine(katzDeliLine){
+  var baseString = "The line is currently: "
+  
 }
