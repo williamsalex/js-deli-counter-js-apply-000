@@ -6,6 +6,11 @@ function takeANumber(katzDeliLine, name) {
   return("Welcome, "+name+". You are number "+(currPos+1)+" in line.")
 }
 function nowServing(katzDeliLine) {
-  katzDeliLine=katzDeliLine.slice(1,katzDeliLine.length-1)
-  return 
+  if(katzDeliLine.length === 0) {
+    return 'There is nobody waiting to be served!'
+  } else {
+    var currCustomer = katzDeliLine[0]
+    katzDeliLine=katzDeliLine.slice(1,katzDeliLine.length-1)
+    return currCustomer
+  }
 }
