@@ -11,6 +11,6 @@ function nowServing(katzDeliLine) {
   } else {
     var currCustomer = katzDeliLine[0]
     katzDeliLine=katzDeliLine.slice(1,katzDeliLine.length-1)
-    return currCustomer
+    return "Currently serving "+currCustomer+"."
   }
 }
