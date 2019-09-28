@@ -26,6 +26,6 @@ function currentLine(katzDeliLine){
     for (i = 0; i < katzDeliLine.length; i++) {
       baseString = baseString + toInt(i)+1 + ". " + katzDeliLine[i] +", "
     }
-    return baseString.slice(0,-1)
+    return baseString.slice(0,-2)
   }
 }
